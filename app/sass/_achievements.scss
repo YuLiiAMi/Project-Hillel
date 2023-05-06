@@ -1,0 +1,101 @@
+.achievements {
+    padding: 30px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main;
+        padding-bottom: 30px;
+    }
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img {
+            width: 255px;
+            height: 90px;
+            background: #FFFFFF;
+            border-radius: 12px;
+        }   
+    }
+    &__logo-01 {
+        padding: 24px 39px;
+    }
+    &__logo-02 {
+        padding: 24px 13px;
+        display: none;
+    }
+    &__logo-03 {
+        padding: 24px 1px;
+        display: none;
+    }
+    &__logo-04 {
+        padding: 24px 11px;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .achievements {
+        &__logo {
+            flex-direction: row;
+            justify-content: space-between;
+            img {
+                width: 132px;
+                height: 90px;
+                background: #FFFFFF;
+                border-radius: 12px;
+            }
+        }
+        &__logo-02 {
+            display: block;
+        }
+        &__logo-03 {
+            display: block;
+        }
+        &__logo-04 {
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .achievements {
+        &__logo {
+            img {
+                width: 196px;
+                height: 110px;
+               
+            }
+        }
+    }
+} 
+
+@media (min-width: 1300px) {
+    .achievements {
+        &__logo {
+            img {
+                width: 300px;
+                height: 110px;  
+            }
+        }
+        &__logo-01 {
+            padding: 25px 110px;
+        }
+        &__logo-02 {
+            padding: 25px 70px;
+           
+        }
+        &__logo-03 {
+            padding: 25px 52px;
+            
+        }
+        &__logo-04 {
+            padding: 25px 67px;
+            
+        }
+    }
+}  

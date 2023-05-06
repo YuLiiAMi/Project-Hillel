@@ -1,0 +1,108 @@
+.team {
+    padding-top: 50px;
+    &__bg {
+        background: $greyBg;
+        border-radius: 12px;
+    }
+    &__text-box {
+        padding: 30px;
+    }
+    &__photo {
+        width: 100%;   
+    }
+    &__article {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradientRedtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-top: 5px;
+        padding-bottom: 60px;
+    }
+    &__article-name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $greyBgText;
+        padding-bottom: 6px;
+    }
+    &__article-job {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: $greyBgText;
+        padding-bottom: 30px;
+    }
+    &__dots {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__dot-1 {
+        display: inline-flex;
+        span {
+            width: 16px;
+            height: 16px;
+            background: $activeRegular;
+            border-radius: 50%;
+        }
+    }
+    &__dot-2 {
+        display: inline-flex;
+        span {
+            width: 16px;
+            height: 16px;
+            background: $activeRegular;
+            opacity: 0.2;
+            border-radius: 50%;
+            margin-right: 15px;
+            margin-left: 15px;
+            &:hover {
+                background: rgba(36, 163, 255, 0.6);
+
+            }
+        }
+    }
+    &__dot-3 {
+        display: inline-flex;
+        span {
+            width: 16px;
+            height: 16px;
+            background: $activeRegular;
+            opacity: 0.2;
+            border-radius: 50%; 
+            &:hover {
+                background: rgba(36, 163, 255, 0.6);
+
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .team {
+        padding-top: 60px;
+    }
+}
+
+@media (min-width: 991px) {
+    .team {
+        &__parent {
+            display: flex;
+            align-items: center;
+        }
+        &__pic {
+            width: 40%;
+        }
+        &__text {
+            width: 60%;
+        }
+        &__text-box {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

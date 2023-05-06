@@ -1,0 +1,49 @@
+.legal {
+    display: grid;
+    justify-items: center;
+    &__text {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 314px;
+        padding-top: 129px;
+    }
+    &__scroll {
+        background: none;
+        padding-top: 159px;
+        padding-bottom: 30px;
+        display: grid;
+        text-align: center;
+        &:hover svg path {
+            stroke: $accent;
+        }
+        &:hover svg circle {
+            stroke: $accent;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .legal {
+        &__text {
+            width: 100%;
+            padding-top: 269px;
+        }
+        &__scroll {
+            padding-top: 417px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .legal {
+        &__text {
+            padding-top: 245px;
+        }
+        &__scroll {
+            padding-top: 289px;
+        }
+    }
+}

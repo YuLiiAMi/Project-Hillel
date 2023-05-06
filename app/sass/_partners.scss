@@ -1,0 +1,199 @@
+.partners {
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $main;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    &__logo {
+        display: grid;
+        img {
+            width: 100%;
+        }
+    }
+    &__logo-01 {
+        background: #1C4280;
+        padding: 36px 80px;
+    }
+    &__logo-02 {
+        background: #143646;
+        padding: 44px 86px;
+    }
+    &__logo-03 {
+        background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+        padding: 38px 98px;
+    }
+    &__logo-04 {
+        background: #9E4DC3;
+        padding: 39px 97px;
+    }
+    &__logo-05 {
+        background: #FD9339;
+        padding: 38px 100px;
+    }
+    &__logo-06 {
+        background: #E2E2E4;
+        padding: 36px 90px;
+    }
+    &__logo-07 {
+        background: #C71C36;
+        padding: 36px 90px;
+        display: none;
+    }
+    &__logo-08 {
+        background: #DCF3F9;
+        padding: 34px 100px;
+        display: none;
+    }
+    &__logo-09 {
+        background: #EAEAEA;
+        padding: 35px 85px;
+        display: none;
+    }
+    &__logo-10 {
+        background: #282240;
+        padding: 36px 98px;
+        display: none;
+    }
+    &__logo-11 {
+        background: #1D4568;
+        padding: 35px 86px;
+        display: none;
+    }
+    &__logo-12 {
+        background: #000000;
+        padding: 36px 86px;
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .partners {
+        &__logo {
+            grid-template-columns: 1fr 1fr 1fr;
+            img {
+                height: 120px;
+                background-size: cover;
+            }
+        }
+        &__logo-01 {
+            background: #1C4280;
+            padding: 36px 20px;
+        }
+        &__logo-02 {
+            background: #143646;
+            padding: 44px 29px;
+        }
+        &__logo-03 {
+            background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+            padding: 38px 39px;
+        }
+        &__logo-04 {
+            background: #9E4DC3;
+            padding: 39px 38px;
+        }
+        &__logo-05 {
+            background: #FD9339;
+            padding: 38px 41px;
+        }
+        &__logo-06 {
+            background: #E2E2E4;
+            padding: 36px 62px;
+        }
+        &__logo-07 {
+            background: #C71C36;
+            padding: 29px 59px;
+            display: block;
+        }
+        &__logo-08 {
+            background: #DCF3F9;
+            padding: 22px 55px;
+            display: block;
+        }
+        &__logo-09 {
+            background: #EAEAEA;
+            padding: 30px 37px;
+            display: block;
+        }
+        &__logo-10 {
+            background: #282240;
+            padding: 41px 37px;
+            display: block;
+        }
+        &__logo-11 {
+            background: #1D4568;
+            padding: 37px 33px;
+            display: block;
+        }
+        &__logo-12 {
+            padding: 12px 52px;
+            display: block;
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .partners {
+        &__logo {
+            grid-template-columns: 1fr 1fr 1fr 1fr; 
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .partners {
+        &__logo-01 {
+            background: #1C4280;
+            padding: 36px 80px;
+        }
+        &__logo-02 {
+            background: #143646;
+            padding: 44px 86px;
+        }
+        &__logo-03 {
+            background: linear-gradient(0deg, #F48B30, #F48B30), #F48B30;
+            padding: 38px 98px;
+        }
+        &__logo-04 {
+            background: #9E4DC3;
+            padding: 39px 97px;
+        }
+        &__logo-05 {
+            background: #FD9339;
+            padding: 38px 100px;
+        }
+        &__logo-06 {
+            background: #E2E2E4;
+            padding: 36px 90px;
+        }
+        &__logo-07 {
+            background: #C71C36;
+            padding: 30px 111px;
+        }
+        &__logo-08 {
+            background: #DCF3F9;
+            padding: 22px 107px;
+        }
+        &__logo-09 {
+            background: #EAEAEA;
+            padding: 30px 89px;
+        }
+        &__logo-10 {
+            background: #282240;
+            padding: 41px 89px;
+        }
+        &__logo-11 {
+            background: #1D4568;
+            padding: 37px 85px;
+        }
+        &__logo-12 {
+            background: #000000;
+            padding: 12px 104px;
+        }
+    }
+}

@@ -1,0 +1,140 @@
+.menu {
+    margin-right: -15px;
+    padding-top: 15px;
+    position: relative;
+    &__list {
+        position: absolute;
+        right: 0;
+        top: auto;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        list-style: none;
+        display: none;
+        &_about {
+            position: absolute;
+            right: 0;
+            top: auto;
+            display: flex;
+            flex-direction: column;
+            background: #FFFFFF;
+            border-radius: 0px;
+            list-style: none;
+            display: none;
+            a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: right;
+                color: $activeRegular;
+                padding-right: 15px;
+                text-decoration: none;
+                &.active {
+                    color:$accent;
+                    text-decoration: underline;
+                }
+                &:not(.active):hover {
+                    text-decoration: underline;
+                }  
+            }
+        }
+        a {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+            padding-right: 15px;
+            text-decoration: none;
+
+            &.active {
+                color:$accent;
+                text-decoration: underline;
+            }
+            &:not(.active):hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__btn {
+    cursor: pointer;
+    background-image: url('../img/burger_white.svg');
+    width: 32px;
+    height: 32px;
+    background-color: transparent;
+    border: none;
+        &_about {
+            cursor: pointer;
+            width: 32px;
+            height: 32px;
+            background-color: transparent;
+            border: none;
+            background-image: url('../img/burger_grey.svg');
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        margin-right: 0;
+        padding-top: 0;
+        display: flex;
+        &__btn {
+            display: none;
+            &_about {
+                display: none;
+            }
+        }
+        &__list {
+            position: unset;
+            display: flex;
+            flex-direction: row;
+            padding-left: 0;
+            list-style: none;
+            a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: right;
+                color: #FFFFFF;
+                padding-right: 15px;
+                text-decoration: none;
+            }
+            &_about {
+                position: unset;
+                display: flex;
+                flex-direction: row;
+                padding-left: 0;
+                list-style: none;
+                a {
+                    font-weight: 700;
+                    font-size: 16px;
+                    line-height: 20px;
+                    text-align: right;
+                    color: $activeRegular;
+                    padding-right: 15px;
+                    text-decoration: none;
+                    &.active {
+                        color:$accent;
+                        text-decoration: underline;
+                    }
+                    &:not(.active):hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menu {
+        justify-self: end;
+        &__list {
+            li {
+                padding-right: 0;
+                padding-left: 30px;
+         }
+        }
+    }
+}

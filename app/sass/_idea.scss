@@ -1,0 +1,71 @@
+.idea {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradientRedtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-bottom: 30px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+}
+.statistic {
+    border-left: 4px solid $separator;
+    padding-left: 30px;
+    &__item {
+        &_pad {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+    &__numb {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: $gradientRedtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        padding-left: 8px;
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: $main;
+        padding-top: 10px;
+    }
+    &__red {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .idea {
+       padding-top: 60px;
+    }
+}
+
+@media (min-width: 991px) {
+    .idea {
+        display: grid;
+        grid-template-columns: 1fr 388px;
+        column-gap: 30px;
+        padding-bottom: 0;
+    }
+
+    .statistic {
+        height: 322px;
+    }
+}

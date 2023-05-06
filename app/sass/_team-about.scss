@@ -1,0 +1,45 @@
+.team-about {
+    padding-bottom: 60px;
+    &__pic {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    &__text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+        padding-bottom: 30px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradientRedtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+@media (min-width: 768px) {
+    .team-about {
+        &__pic {
+            padding-top: 30px;
+            padding-bottom: 60px;
+        }
+    }
+}
+
+@media (min-width: 991px) {
+    .team-about {
+        display: grid;
+        grid-template-columns: 1fr 362px;
+        column-gap: 60px;
+        &__title {
+            height: 138px;
+            padding: 0 30px;
+        }
+    }
+}

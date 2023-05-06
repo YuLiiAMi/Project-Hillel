@@ -1,0 +1,45 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+  
+.body {
+  font-family: "montserrat", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 375px;
+  padding: 0 30px;
+  margin: 0 auto; 
+}
+
+.container-partners {
+  max-width: 1440px;
+  min-width: 375px;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.header__adress,
+.header__adress_about,
+.header__fb {
+  display: none;
+}

@@ -1,0 +1,38 @@
+.gradient {
+    position: relative;
+    background: url('../img/h.svg') no-repeat center top, 
+                $gradientSupersoft;
+    border-radius: 0px 0px 12px 12px;
+    &::after {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        background-color: #CACADB;
+    }
+    &::before {
+        content: '';
+        height: 10px;
+        border-radius: 0 0 12px 12px;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        background-color: #E7E7F2;
+    }
+}
+
+@media (min-width: 768px) {
+    .gradient {
+      background-size: 894px 1024px, 100% auto;
+    }
+  }
+
+@media (min-width: 992px) {
+    .gradient {
+        background-size: 670px 768px, 100% auto;
+    }
+}
